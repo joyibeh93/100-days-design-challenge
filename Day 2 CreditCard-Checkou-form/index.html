@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d825fc213e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Credit Catd Checkout Form</title>
+    <link rel="stylesheet" href="./card.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img src="./img/payme-logo.png" alt="logo-img" class="logo-img" />
+        <div class="nav_container">
+          <ul class="nav_list">
+            <li>Customer info</li>
+            <li>Shipping info</li>
+            <li>Payment selection</li>
+          </ul>
+        </div>
+      </nav>
+      <div class="main-cnt">
+        <div class="main-cnt1">
+          <img
+            src="./img/credit-img4.png"
+            alt="credit-card"
+            class="credit-card"
+          />
+        </div>
+        <div class="main-cnt2">
+          <h2 class="payment-dtails">Payment details</h2>
+          <div class="form-container">
+            <form id="payment-form">
+              <div class="form_input">
+                <label for="Name"> Cardholder Name</label><br />
+                <i class="fa-regular fa-user"></i>
+                <input type="text" placeholder=" Madonna Elizabeth Smith" class="input-text" id="card-holder" required />
+              </div>
+              <div class="form_input form_input2">
+                <label for="Card-Numbers"> Card Number</label><br />
+                <i class="fa-regular fa-credit-card"></i
+                ><input type="text" placeholder="0000 0000 0000 0000" class="input-text"id="Card-number" required/>
+              </div>
+              <div class="date-cnt">
+                <div>
+                  <label for="expire-date">Expiration date</label> <br>
+                  <i class="fa-regular fa-calendar-days"></i
+                  ><input type="date" class="date-cvv" id="expiration-date" required  />
+                </div>
+                <div class="cvv">
+                  <label for="ccv/cvc">ccv/cvc</label> <br>
+                  <input type="text" placeholder="xxx"  class="date-cvv cvv" id="cvv" required/>
+                </div>
+              </div>
+            </form>
+          </div>
+          <p class="payment">payment amount : <strong> 150$</strong></p>
+          <button class="btn-pay" id="btn-pay"> Pay</button>
+        </div>
+      </div>
+    </div>
+    <script src="./card.js"></script>
+  </body>
+</html>
