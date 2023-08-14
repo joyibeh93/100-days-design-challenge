@@ -1,0 +1,490 @@
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Unbounded', cursive;
+    /* color: (001f54,001f54,034078,1282a2,fefcfb); */
+}
+
+header {
+    background-color: hsla(226, 61%, 10%, 0.952);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Unbounded', cursive;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+    padding: 20px;
+}
+
+.logo-text {
+    color: #fefcfb;
+    font-size: 1.5rem;
+}
+
+.logo-img {
+    width: 25px;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fefcfb;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-list li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fefcfb;
+    transition: 200ms ease-in;
+}
+
+.nav-list li a:hover {
+    background-color: #fefcfb;
+    color: #001f54;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+/* STYLING THE HERO SECTION */
+.nav-image{
+    background:linear-gradient(hsla(0, 0%, 0%, 0.5),hsla(0, 0%, 0%, 0.5)), url('./images/pitch.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+   
+}
+
+
+.hero-cnt{
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left:20%;
+    font-size: 1.5em;
+    color: #c4c0be;;
+    text-transform: capitalize;
+    font-family: 'Unbounded', cursive;
+    width: 800px;
+    line-height: 3.5em;
+   
+}
+/* styling the football section */
+.hist-section,.sect-legnd{
+    font-family: 'Roboto Slab', serif;
+    padding: 40px;
+}
+.section-head{
+text-align: center;
+margin-bottom: 20px;
+}
+.hist-text{
+    line-height: 2em;
+    width: 820px;
+    margin: 0 auto;
+    text-align: justify;
+
+}
+/* STYLING LEAGUE SESSION */
+.leag-sect{
+    background-color:#efefef;
+    padding: 40px;
+}
+.league-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+}
+.league-grid1{
+ border: 1px solid #001f54 ;
+ border-radius: 20px;
+ padding: 5px;
+}
+.card-image{
+    width: 100%;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+
+}
+.card-title{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.card-text{
+font-family: 'Roboto Slab', serif; 
+text-align:center;
+}
+.btn{
+    display: block;
+    margin: 8px auto;
+    padding: 8px 14px;
+    background-color:#034078 ;
+    border: none;
+    border-radius: 4px;
+    line-height: 1.2em;
+}
+
+.btn a{
+    text-decoration: none;
+   color: #fefcfb;
+}
+/* STYLING LEGEND IMAGE */
+.Lgnd-img{
+    border-radius: 50%;
+    border: 1px solid #001f54;
+    width: 200px;
+    height: 200px;
+}
+.legend-context{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 12px;
+}
+h4{
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.footballers-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* styling slide show */
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 550px;
+    position: relative;
+    margin: auto;
+    
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* STYLING FOOTER */
+  .footer{
+    background-color: hsla(226, 61%, 10%, 0.952);
+    color: #fefcfb;
+    padding: 3.125rem;
+  }
+  .newsletter{
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .subcribe{
+    margin: 1.25rem auto;
+    width: 37.5rem;
+    
+  }
+  input[type=email]{
+    /* width: 80%; */
+    padding: 0.875rem 5.625rem;
+    font-size: 1.125rem;
+  }
+  .btn-fter{
+    padding: 0.875rem 2.1875rem;
+    background-color: #f97068;
+    border: 1px solid #f97068;
+    color: #fefcfb;
+    font-size: 1.125rem;
+  }
+  .footer-cnt{
+    display: flex;
+    justify-content: space-around;
+    margin: 1.25rem 0.625rem;
+  }
+ .footer-cnt, .footer-list{
+    margin-top: 2.5rem;
+  }
+
+  .footer-list li{
+    font-size: 1.125rem;
+    line-height: 2em;
+    list-style: none;
+
+  }
+  .footer-list li:hover{
+    text-decoration: underline;
+  }
+  .footer-links h3{
+    margin-top: 0.625rem;
+  }
+  .footer-list li a{
+    color: #fefcfb;
+    text-decoration: none;
+  }
+ 
+  /* RESPONSIVE DESIGN */
+  
+@media only screen and (max-width: 920px) {
+
+    /* .nav-list {
+        display: block; /* Hide the navigation menu by default */
+        /* flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: hsla(226, 61%, 10%, 0.952);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    } */
+
+    /* .navbar.active .nav-list {
+        display: flex; /* Display the navigation menu when the navbar is active */
+    /* }
+
+    .navbar.active .menu-btn {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+  }  */ */
+
+
+    header {
+        font-size: 16px;
+    }
+    .navbar {
+        display: block;
+        margin: 0;
+        padding: 10px;
+    }
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    .nav-list li {
+        display: block;
+        padding: 8px 0;
+    }
+    .nav-image {
+        height: 60vh;
+    }
+    .hero-cnt {
+        font-size: 1.2em;
+        width: 90%;
+    }
+    .hist-section, .sect-legnd {
+        padding: 20px;
+    }
+    .hist-text {
+        width: 100%;
+    }
+    .leag-sect {
+        padding: 20px;
+    }
+    .league-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .Lgnd-img {
+        width: 150px;
+        height: 150px;
+    }
+    .legend-context {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .slideshow-container {
+        max-width: 100%;
+    }
+    .text, .numbertext {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .hero-cnt{
+        text-align: center;
+        position: absolute;
+        top: 15%;
+        left:8%;
+        font-size: 1em;
+        
+    }
+    .menu-btn {
+        display: block; /* Show the hamburger menu button */
+    }
+
+    .nav-list {
+        display: none; /* Hide the navigation menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color:  hsla(226, 61%, 10%, 0.952);
+        box-shadow: 0px 2px 4px  hsla(226, 61%, 10%, 0.952);
+        z-index: 1;
+    }
+
+    .navbar.active .nav-list {
+        display: block; /* Display the navigation menu when the navbar is active */
+    }
+   
+    
+    /* .nav-list li {
+        display: inline-block;
+        padding: 0px 10px;
+    }
+     */
+
+    .navbar.active .menu-btn {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+    }
+
+    .subcribe {
+        max-width: 100%;
+        
+    }
+    
+    input[type=email] {
+        padding: 0.625rem;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .btn-fter {
+        padding: 0.625rem 1.5625rem;
+        display: block;
+        margin: 10px auto;
+    }
+    
+    .footer-cnt {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-cnt, .footer-list {
+        margin-top: 1.25rem;
+    }
+
+    /* Adjust other styles for smaller screens here */
+}
+
+
+@media only screen and (max-width: 480px) {
+    header {
+        font-size: 14px;
+    }
+    .navbar {
+        padding: 8px;
+    }
+    .logo-text {
+        font-size: 1rem;
+    }
+    .nav-list li {
+        padding: 5px 0;
+    }
+    .nav-image {
+        height: 50vh;
+    }
+    .hero-cnt {
+        font-size: 1em;
+        width: 90%;
+    }
+    .hist-section, .sect-legnd {
+        padding: 10px;
+    }
+    .hist-text {
+        width: 100%;
+        font-size: 14px;
+    }
+    .leag-sect {
+        padding: 10px;
+    }
+    .league-grid {
+        grid-template-columns: 1fr;
+    }
+    .Lgnd-img {
+        width: 120px;
+        height: 120px;
+    }
+    .legend-context {
+        grid-template-columns: 1fr;
+    }
+    .slideshow-container {
+        max-width: 100%;
+    }
+    .text, .numbertext {
+        font-size: 10px;
+    }
+    @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+      }
+    
+}
