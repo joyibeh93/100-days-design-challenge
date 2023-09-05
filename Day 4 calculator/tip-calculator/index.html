@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Discount Calulator</title>
+  </head>
+  <body>
+    <main>
+      <section class="cal-body"> 
+         <p class="valid" id="valid-bill">please enter the valid bill for amount and person</p>
+
+        <div class="cal-main">
+        
+          <div class="cal-box1">
+            <p class="bill">Bill</p>
+            <input type="number" placeholder="142.55" id="input-value"  class="input"/>
+
+            <div>
+              <label for="people" class="bill">number of people</label>
+              <div>
+                <input type="number" placeholder="5" id="input-person" class="input"/>
+              </div>
+            </div>
+
+            <div class="cal-btn-option">
+              <p class="bill">select discount %</p>
+
+              <div class="button-set1">
+                <button class="btn btn1" id="btn-five">5%</button>
+                <button class="btn btn1" id="btn-ten">10%</button>
+                <button class="btn btn1 btn11" id="btn-fifteen">15%</button>
+              </div>
+              <div class="button-set2">
+                <button class="btn" id="btn-twenty-five">25%</button>
+                <button class="btn" id="btn-fifty">50%</button>
+                <input type="number" placeholder="custom" class="btn btn111" id="input-custom">
+              </div>
+            </div>
+
+            
+          </div>
+          <div class="box2">
+            <div class="tip-amt">
+              <p class="tip">D-Amount <br><small>/person</small></p>
+              <p  class="rate rate2" id="discount-rate">$4.27</p>
+            </div>
+            <div class="tip-amt tip-amt2">
+              <p class="total">Total <small>/person</small></p>
+              <p class="rate" id="total-pay">$32.79</p>
+            </div>
+            <div class="tip-amt tip-amt2">
+              <p class="total">Total <small>Paid</small></p>
+              <p class="rate" id="total-amount">$00.00</p>
+            </div>
+            <div>
+              <button class="btn-reset" id="btn-reset">reset</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

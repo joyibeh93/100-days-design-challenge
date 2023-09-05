@@ -4,7 +4,7 @@ paymentButton.addEventListener("click",function(event){
     //accepting the inputted value and using trim to remove white space
     let cardHolderName=document.getElementById("card-holder").value.trim() ;
     //this wll remove spaces from the card
-    let cardNumber=document.getElementById("Card-number").value.trim().trim().replace(/\s/g,'');
+    let cardNumber=document.getElementById("Card-number").value.trim().replace(/\s/g,'');
     let expirationDate=document.getElementById("expiration-date").value.trim();
     let Cvv=document.getElementById("cvv").value.trim()
 

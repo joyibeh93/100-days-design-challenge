@@ -1,0 +1,165 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+main{
+    background-color: hsl(185, 41%, 84%);
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.cal-body{
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 20px;
+    border: 1px solid hsl(0, 0%, 100%);
+    padding:1.25rem;
+    width:600px;
+    height: 330px; 
+}
+.valid{
+    font-size: 50%;
+    color: #ff0000;
+    display: none;
+}
+.cal-main{
+    display: flex;
+    /* justify-content: center;  */
+    align-items: center;
+    margin: 10px auto;
+    width:100%
+}
+.cal-box1{
+    width: 50%;
+    padding:10px;
+}
+.bill{
+    font-size:60%;
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+}
+.cal-btn-option p{
+    margin-top: 0.94rem;
+}
+.input{
+    padding: 0.625rem 2.1875rem;
+    background-color:  hsl(189, 41%, 97%);
+    outline: 0;
+    border-radius: 3px;
+    border: 1px solid hsl(189, 41%, 97%);
+    color:hsl(186, 14%, 43%);
+    font-weight: 700;
+    margin-bottom: 0.625rem;
+
+}
+.cal-btn-option{
+    margin-top: 0.3125rem;
+}
+
+.btn{
+    padding: 0.5625rem 1.25rem ;
+    border-radius:0.3125rem;
+    background-color:hsl(183, 100%, 15%);
+    color:#fff;
+    border: none;
+    font-size: 60%;
+    font-weight: bold;
+}
+.btn1{
+    padding:  0.5625rem 1.375rem;
+    margin-left:1px;  
+    
+}
+.btn11{
+    padding: 0.5625rem 1.5625rem;
+    background-color:  hsl(172, 67%, 45%);
+    border: none;
+    color:#000;
+}
+.btn111{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    width: 85px;
+    
+}
+.button-set1,.button-set2{
+    margin-top:10px ;
+}
+.box2{
+    background-color: hsl(183, 100%, 15%);
+    width:50%;
+    height:280px;
+    color:#fff;
+    border-radius: 0.625rem;
+    padding: 0.625rem; 
+    
+}
+.tip-amt {
+    display: flex;
+    margin-top:0.625rem;
+    font-size: 55%;
+}
+.tip-amt,.tip{
+    width:240px;
+  
+} 
+
+/* .tip-amt,.total{
+    width:120px;
+    
+} */
+.tip-amt2{
+    margin-top: 1.25rem;
+
+} 
+.rate{
+    margin-left : 4.375rem;
+    font-size:200%;
+    font-weight: bold;
+    color:  hsl(172, 67%, 45%);
+}
+.total{
+    font-size: 120%;
+}
+.rate2{
+    margin-left : 1.875rem;
+    color:  hsl(172, 67%, 45%);
+}
+
+.btn-reset{
+    display:block;
+    margin-top:5rem;
+    padding:0.5rem 6.25rem;
+    border-radius:5px;
+    border:none;
+    background-color:  hsl(172, 67%, 45%);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: hsl(186, 14%, 43%);
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width:750px) {
+    .cal-body{
+        width:380px;
+        height: 600px; 
+    }
+    .cal-main{
+        display:block;
+       
+       
+    }
+    .cal-box1,.box2{
+        margin: 0 auto;
+        width: 90%;
+      
+    }
+    .btn-reset{
+       margin: 60px auto; 
+    }
+}
